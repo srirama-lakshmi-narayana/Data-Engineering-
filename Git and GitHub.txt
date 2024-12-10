@@ -1,0 +1,215 @@
+Git and GitHub
+
+#1 Git 
+
+Version Control System
+
+1. Keep track of code changes
+2. Used to collaborate on  code
+3. Track who made changes
+
+To know about the version of Git
+
+git --version
+
+What does Git do?
+
+1. Manage projects with Repositories
+2. Clone a project to work on a local copy
+3. Control and track changes with staging and committing
+4. Branch and Merge to allow for work on different parts and versions of a project
+5. Pull the latest version of the project to a local copy
+6. Push local updates to the main project
+
+Working with Git
+
+1. Initialize Git on a folder, making it a repository
+2. Git now creates a hidden folder to keep track of changes in that folder
+3. When a file is changed, added, or deleted, it is considered modified 
+4. You select the modified files you want to stage
+5. The Staged files are Committed, Which prompts Git to store a permanent 
+   snapshot of that files
+6. Git allows you to see the full history of every commit
+7. You can revert back to any previous commit
+8. Git does not store a separate copy of every file in every commit but keeps
+   track of changes made in each commit
+
+
+Configure Git
+
+git config --global user.name "Laxman"
+git config --global user.email"laxmansriram10@gmail.com"
+
+
+Creating Git Folder
+
+mkdir project
+cd project
+
+Initialize Git
+
+git init
+
+
+Git New Files
+
+sample.txt
+code.py
+
+ls  --list all files
+
+sample.txt
+code.py
+
+git status -- check the status
+
+( No commits yet )
+
+Tracked - Files that Git knows about and are added to the repo
+Untracked - Files that are in your working directory, but not added to repo
+
+
+Git Staging 
+
+git add sample.txt
+git add code.py
+
+git status
+
+( No commits yet )
+( changes to be committed:
+	new file: sample.txt
+	new file: code.py 
+)
+
+To add multiple files 
+
+git add --all or git add -A
+
+Git Commit ( save point )
+
+After completing the work
+
+stage ----> commit
+
+git commit -m " First release of sample code "
+
+Git Commit Log
+
+git log
+
+Git Help
+
+git help --all
+
+git commit -help
+
+Git Branch 
+
+New/Separate version of the main repository
+Allows us to work on different parts of the project without impacting the main branch
+
+git branch hello-images  -- new branch
+
+git branch 
+
+* master ( current branch )
+
+check out - check out a branch
+
+Moving from the current branch to the specified branch
+
+Emergency Branch
+
+git checkout -b emergency-fix ( branch name to fix error )
+
+
+Merge Branches
+
+git checkout master
+
+git merge emergency-fix
+
+git branch -d emergency-fix
+
+Merge Conflict
+
+git checkout hello-images
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
